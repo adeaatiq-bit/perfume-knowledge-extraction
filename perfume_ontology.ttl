@@ -1,0 +1,304 @@
+@prefix : <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#> .
+
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/belongsToFamily
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/belongsToFamily> rdf:type owl:ObjectProperty ;
+                                                                                      rdfs:domain <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Fragrance> ;
+                                                                                      rdfs:range <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/OlfactoryFamily> .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/containsIngredient
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/containsIngredient> rdf:type owl:ObjectProperty ;
+                                                                                         rdfs:domain <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Fragrance> ;
+                                                                                         rdfs:range <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Ingredient> .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/createdBy
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/createdBy> rdf:type owl:ObjectProperty ;
+                                                                                rdfs:domain <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Fragrance> ;
+                                                                                rdfs:range <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Perfumer> .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/hasBaseNote
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/hasBaseNote> rdf:type owl:ObjectProperty ;
+                                                                                  rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Fragrance> ;
+                                                                                  rdfs:range <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/BaseNote> .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/hasHeartNote
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/hasHeartNote> rdf:type owl:ObjectProperty ;
+                                                                                   rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Fragrance> ;
+                                                                                   rdfs:range <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/HeartNote> .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/hasNote
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/hasNote> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:domain <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Fragrance> ;
+                                                                              rdfs:range <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Note> .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/hasTopNote
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/hasTopNote> rdf:type owl:ObjectProperty ;
+                                                                                 rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Fragrance> ;
+                                                                                 rdfs:range <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/TopNote> .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/inspiredBy
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/inspiredBy> rdf:type owl:ObjectProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Fragrance> ;
+                                                                                 rdfs:range <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Fragrance> .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/manufacturedBy
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/manufacturedBy> rdf:type owl:ObjectProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Fragrance> ;
+                                                                                     rdfs:range <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Brand> .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/recommendedInSeason
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/recommendedInSeason> rdf:type owl:ObjectProperty ;
+                                                                                          rdfs:domain <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Fragrance> ;
+                                                                                          rdfs:range <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Season> .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/similarTo
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/similarTo> rdf:type owl:ObjectProperty ;
+                                                                                rdfs:domain <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Fragrance> ;
+                                                                                rdfs:range <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Fragrance> .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/suitableFor
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/suitableFor> rdf:type owl:ObjectProperty ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Fragrance> ;
+                                                                                  rdfs:range <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Occasion> .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/targetGender
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/targetGender> rdf:type owl:ObjectProperty ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Fragrance> ;
+                                                                                   rdfs:range <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/GenderTarget> .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/worksFor
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/worksFor> rdf:type owl:ObjectProperty ;
+                                                                               rdfs:domain <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Fragrance> ;
+                                                                               rdfs:range <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Brand> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/launchYear
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/launchYear> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Fragrance> ;
+                                                                                 rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/longevityHours
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/longevityHours> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Fragrance> ;
+                                                                                     rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/sillageLevel
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/sillageLevel> rdf:type owl:DatatypeProperty ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Fragrance> ;
+                                                                                   rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Agent
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Agent> rdf:type owl:Class ;
+                                                                            rdfs:label "Agent" .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/BaseNote
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/BaseNote> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Note> ;
+                                                                               rdfs:label "BaseNote" .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Brand
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Brand> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Agent> ;
+                                                                            rdfs:label "Brand" .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/EauDeCologne
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/EauDeCologne> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Fragrance> ;
+                                                                                   rdfs:label "EaudeCologne" .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/EauDeParfum
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/EauDeParfum> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Fragrance> ;
+                                                                                  rdfs:label "EaudeParfum" .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/EauDeToilette
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/EauDeToilette> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Fragrance> ;
+                                                                                    rdfs:label "EaudeToilette" .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Fragrance
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Fragrance> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/MaterialEntity> ;
+                                                                                rdfs:label "Fragrance" .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/GenderTarget
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/GenderTarget> rdf:type owl:Class ;
+                                                                                   rdfs:label "Gender Target" .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/HeartNote
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/HeartNote> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Note> ;
+                                                                                rdfs:label "HeartNote" .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Ingredient
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Ingredient> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/MaterialEntity> ;
+                                                                                 rdfs:label "Ingredient" .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/MaterialEntity
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/MaterialEntity> rdf:type owl:Class ;
+                                                                                     rdfs:label "Material Entity" .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Note
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Note> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Ingredient> ;
+                                                                           rdfs:label "Note" .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Occasion
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Occasion> rdf:type owl:Class ;
+                                                                               rdfs:label "Occasion" .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/OlfactoryFamily
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/OlfactoryFamily> rdf:type owl:Class ;
+                                                                                      rdfs:label "Olfactory Family" .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Perfume
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Perfume> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Fragrance> ;
+                                                                              rdfs:label "Perfume" .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Perfumer
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Perfumer> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Agent> ;
+                                                                               rdfs:label "Perfumer" .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/RawMaterial
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/RawMaterial> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Note> ;
+                                                                                  rdfs:label "RawMaterial" .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Season
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Season> rdf:type owl:Class ;
+                                                                             rdfs:label "Season" .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/TopNote
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/TopNote> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Note> ;
+                                                                              rdfs:label "TopNote" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Bergamot
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Bergamot> rdf:type owl:NamedIndividual ,
+                                                                                        <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/TopNote> .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Bleu_de_Chanel
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Bleu_de_Chanel> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/EauDeParfum> ;
+                                                                                     <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/belongsToFamily> <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Woody> ;
+                                                                                     <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/hasTopNote> <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Mint> ;
+                                                                                     <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/manufacturedBy> <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Chanel> .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Chanel
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Chanel> rdf:type owl:NamedIndividual ,
+                                                                                      <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Brand> .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Chanel_Chance
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Chanel_Chance> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/EauDeParfum> ,
+                                                                                             <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Perfume> ;
+                                                                                    <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/hasTopNote> <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Bergamot> ;
+                                                                                    <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/manufacturedBy> <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Chanel> .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Dior
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Dior> rdf:type owl:NamedIndividual ,
+                                                                                    <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Brand> .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Dior_Sauvage
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Dior_Sauvage> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/EauDeToilette> ;
+                                                                                   <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/belongsToFamily> <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Fougere> ;
+                                                                                   <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/hasTopNote> <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Pepper> ;
+                                                                                   <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/manufacturedBy> <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Dior> ;
+                                                                                   rdfs:comment "The company or designer label that manufactures, markets, and sells the fragrance" ,
+                                                                                                "The core scent note of a fragrance, the main body of the perfume" ,
+                                                                                                "The creator of the specific fragrance formula" ,
+                                                                                                "The long-lasting scent of the perfume, which makes it last during the day" ,
+                                                                                                "The opening scent note of a fragrance" .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Fougere
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Fougere> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/OlfactoryFamily> .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Mint
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Mint> rdf:type owl:NamedIndividual ,
+                                                                                    <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/TopNote> .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Pepper
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Pepper> rdf:type owl:NamedIndividual ,
+                                                                                      <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Ingredient> .
+
+
+###  http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Woody
+<http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/Woody> rdf:type owl:NamedIndividual ,
+                                                                                     <http://www.semanticweb.org/adea/ontologies/2026/4/data.perfume.ont#/OlfactoryFamily> .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
